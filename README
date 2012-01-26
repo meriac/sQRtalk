@@ -6,6 +6,20 @@ sQRtalk.com speaker management application
 Please find more information and installation guidelines
 at http://www.openbeacon.org/SQRtalk
 
+Please add CMS token BERLINSYMPOSIUM_API_TOKEN to www/config.php
+and configure a database called 'sqrtalk' with r/w access rights.
+The database is configured in www/config.php, too.
+
+The default database layout can be found at helpers/default.sql in
+SQL database dump format - you can use the mysql command line tool or
+phpMyAdmin to create the database and run the SQL script.
+
+Please run the 'precache.php' script in the directory 'helpers' to
+fetch the whole user list from the content management system (CMS).
+This script needs to be either run after every update or regularly in
+a cron job.
+
+
 == License ==
 
 This program is free software: you can redistribute it and/or modify
