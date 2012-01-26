@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ig/
+Disallow: /qr/
+Disallow: /admin/

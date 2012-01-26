@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^(js|img|css|xajax|robots.txt) - [L,NS]
+RewriteRule ^(qr|doc)/.* $1/index.php [L,NS]
+RewriteRule ^t999 /ig/T601 [R,L,NS]
+RewriteRule .* index.php [L,QSA,NS]

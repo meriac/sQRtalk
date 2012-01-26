@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/talk.css">
+    <title>###TITLE###</title>###JAVASCRIPT###
+    <meta name="author" content="Bitmanufaktur GmbH (http://bitmanufaktur.de)" />
+</head>
+<body###BODYTAGS###>
+    <div id="top">
+	<p>
+            <span id="title"><font class="big"><a href="###LOGO_URL###">Workshop</a></font>&nbsp;<font class "small">###WORKSHOP###</font></span>
+            <span id="note" class="small"><a href="###LOGO_URL###">&laquo; ###WORKSHOP_VERBOSE### &raquo;</a></span>
+	</p>
+	<div class="medium">
+	    <div id="previous" class="bar">
+		<span class="label" id="label_previous">Previous</span>
+		<span class="include" id="include_previous"><span id="spk_previous">###SPK_PREVIOUS###</span></span>
+		<span class="fade-out_hs"></span>
+	    </div>
+	</div>
+    </div>
+
+    <div id="left">
+	<a href="###QRURL###"><img src="###QRCODE###" id="qrcode" title="QR code link to '###WORKSHOP_VERBOSE###'"></a>
+	<p><a href="###LOGO_URL###"><img src="/img/logo.png" id="logo" title="See talk description for '###WORKSHOP_VERBOSE###'"></a></p>
+	<div id="check_in">
+	<table class="button_middle"><tr><td class="button_middle"><span class="button">###BUTTON###</span></td></tr></table>
+	</div>
+	<div id="log_in">
+	<table class="button_middle"><tr><td class="button_middle"><span class="button">###LOGIN###</span></td></tr></table>
+	</div>
+    </div>
+
+    <div id="right">
+	<div id="delta_time"###BAR_EXTEND###></div>
+	<div id="time"###BAR_EXTEND###></div>
+	<div id="counter" class="clock">###COUNTER###</div>
+	<div id="docs"><a href="###DOCS_URL###" id="docs_link"><img src="/img/docs-logo_38px.jpg" title="See session protocol for '###WORKSHOP_VERBOSE###'" class="docs_logo"></a></div>
+    </div>
+
+    <div id="anonymous" class="big">ANONYMOUS</div>
+    <div id="login_form">
+	<p class="big">Login</p>
+	<span class="medium">
+	    <div id="user" class="bar_s">
+		<span class="label_s" id="label_user">Username:</span>
+		<span class="include_s" id="include_user"><span id="username"><input id="login_usr" name="username" type="text" size="26" maxlength="26" class="insert"></span></span>
+	    </div>
+	    <div id="pass" class="bar_s">
+		<span class="label_s" id="label_pass">Password:</span>
+		<span class="include_s" id="include_pass"><span id="password"><input id="login_pwd" name="password" type="password" size="26" maxlength="26" class="insert"></span></span>
+	    </div>
+	    <div id="form">
+		<span id="submit" class="button" onclick="sqrtalk_login();">Login</span>
+		<span id="cancel" class="button" onclick="sqrtalk_show(0,'');">Cancel</span>
+	    </div>
+	    <div id="reference">
+		<span class="medium">&laquo;<a href="sqrtalk.com">sQR talk</a>&raquo; - Smart QR-code controlled speaker application created by <a href="http://bitmanufaktur.de">Bitmanufaktur GmbH</a>.</span>
+	    </div>
+	</span>
+    </div>
+    <div id="main">
+	<span class="fade-out_h"></span>
+	<p class="spk_title"><span id="current_speaker" class="big">###CURRENT_SPEAKER_WRAP###</span></p>
+	<p id="reminder">THANKS FOR YOUR CONTRIBUTION!</p>
+	<p><img src="/img/mail.png" class="info_icon"><div id="spk_email" class="spk_info">###SPK_EMAIL###</div></p>
+	<p><img src="/img/institution.png" class="info_icon"><div id="spk_institution" class="spk_info">###SPK_INSTITUTION###</div></p>
+	<p><img src="/img/twitter.png" class="info_icon"><div id="spk_twitter" class="spk_info">###SPK_TWITTER###</div></p>
+	<p><img src="/img/topic.png" class="info_icon"><div id="spk_topic" class="spk_info">###SPK_TOPIC###</div></p>
+	<p><img src="/img/keywords.png" class="info_icon"><div id="spk_keywords" class="spk_info_long">###SPK_KEYWORDS###<span class="fade-out_v"></span></div></p>
+    </div>
+
+    <div id="bottom">
+	<span class="medium">
+	    <div id="panel" class="bar">
+		<span class="label" id="label_panel"><span class="white">Panel</span></span>
+		<span class="include" id="include_panel"><span id="spk_panel">###SPK_PANEL###</span></span>
+	    </div>
+	</span>
+	<span class="medium">
+	    <div id="next" class="bar">
+		<span class="label" id="label_next">Next</span>
+		<span class="include" id="include_next"><span id="spk_next">###SPK_NEXT###</span></span>
+		<span class="fade-out_hs"></span>
+	    </div>
+	</span>
+	<span class="medium">
+	    <div id="later" class="bar">
+		<span class="label" id="label_later">Later</span>
+		<span class="include" id="include_later"><span id="spk_later">###SPK_LATER###</span>
+	    </div>
+	</span>
+    </div>
+
+    <div id="footer" class="small">Point your browser to <b>###FOOTER_URL###</b> for more information about the current speaker and talk.</div>
+###DEBUG###
+</body>
+</html>
